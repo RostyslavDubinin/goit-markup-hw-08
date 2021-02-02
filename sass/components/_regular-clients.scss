@@ -1,0 +1,58 @@
+/* regular clients */
+
+.section-regular-clients {
+    background-color: $background-color-section;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-link-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.link-clients {
+    color: $link-social-color;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $link-social-color;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+        border: 1px solid $background-color-button;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+}
+
+.icon-clients {
+    fill: currentColor;
+}
+
+.comp1 {
+    padding: 24px 63px 21px 63px;
+}
+.comp2 {
+    padding: 19px 65px;
+}
+.comp3 {
+    padding: 24px 64px 23px 65px;
+}
+.comp4 {
+    padding: 24px 45px;
+}
+.comp5 {
+    padding: 22px 55px 21px 56px;
+}
+.comp6 {
+    padding: 22px 40px 22px 41px;
+}

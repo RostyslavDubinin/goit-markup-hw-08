@@ -1,0 +1,66 @@
+/* features */
+
+.section-features { 
+    background-color: $background-color-section;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    .features-title-name {
+        color: $title-text-color;
+        font-weight: $font-weight-title-name;
+        font-size: $font-size-title-name;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .features-name { 
+        font-size: $font-size-features-name;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        margin-top: 0px;
+        margin-bottom: 0px;  
+    }
+}
+
+.section-features-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+        width: 270px;
+    }
+
+    .item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.bg {
+    padding: 25px 102px; 
+    background-color: $background-color-section-features;
+    margin-bottom: 30px;
+}
+
+.antenna {
+    width: 65px;
+    height: 70px;
+    fill: currentColor;
+}
+.clock {
+    width: 67px;
+    height: 70px;
+    fill: currentColor;
+}
+.diagram {
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+}
+.astronaut {
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+}
