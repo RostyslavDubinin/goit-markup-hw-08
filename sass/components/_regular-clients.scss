@@ -2,22 +2,35 @@
 
 .section-regular-clients {
     background-color: $background-color-section;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    
+
+    .container .section-title {
+        margin-bottom: 15px;
+    }
 }
 
 .clients-link-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+        margin: 15px;
+        
+    }
 
     .item:not(:last-child) {
-        margin-right: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 }
 
 .link-clients {
     color: $link-social-color;
-    width: 170px;
+    text-align: center;
+    width: 210px;
     height: 90px;
     border: 1px solid $link-social-color;
     box-sizing: border-box;

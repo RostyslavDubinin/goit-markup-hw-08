@@ -2,8 +2,8 @@
 
 .section-features { 
     background-color: $background-color-section;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     .features-title-name {
         color: $title-text-color;
@@ -29,6 +29,8 @@
 .section-features-container {
     // display: flex;
     // flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
 
     .item {
         width: 100%;
