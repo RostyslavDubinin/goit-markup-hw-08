@@ -16,9 +16,9 @@
 
     .hero-title {
         color: $secondary-text-color;
-        font-weight: $font-weight-hero-title;
-        font-size: $font-size-hero-title;
-        line-height: 1.36;
+        font-weight: $mobile-font-weight-hero-title;
+        font-size: $mobile-font-size-hero-title;
+        line-height: $mobile-line-height-hero-title;
         letter-spacing: 0.06em;
         text-align: center;
         text-transform: uppercase;
@@ -32,9 +32,9 @@
     .hero-button {
         background-color: $background-color-hero-button;
         color: $secondary-text-color; 
-        font-weight: $font-weight-title-name;
-        font-size: $font-size-button;
-        line-height: 1.87;
+        font-weight: $mobile-font-weight-hero-button;
+        font-size: $mobile-font-size-hero-button;
+        line-height: $mobile-line-height-hero-button;
         letter-spacing: 0.06em;
         border-radius: 4px;
         padding: 10px 32px;
