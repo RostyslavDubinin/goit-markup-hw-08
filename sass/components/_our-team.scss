@@ -8,17 +8,17 @@
 
     .workers-title-name { 
         color: $title-text-color;
-        font-weight: $font-weight-address-nav;
-        font-size: $font-size-button;
-        line-height: 1.18;
+        font-weight: $mobile-font-weight-workers-title;
+        font-size: $mobile-font-size-workers-title;
+        line-height: $mobile-line-height-workers-title;
         margin-top: 30px;
         margin-bottom: 10px; 
         text-align: center;
     }
 
     p {  
-        font-size: $font-size-button;
-        line-height: 1.18;
+        font-size: $mobile-font-size-workers-p;
+        line-height: $mobile-line-height-workers-p;
         letter-spacing: 0.03em; 
         margin-top: 0px;
         margin-bottom: 16px; 

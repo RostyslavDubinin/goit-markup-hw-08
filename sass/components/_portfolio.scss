@@ -8,16 +8,17 @@
     .portfolio-title {
         color: $title-text-color;
         width: 322px;
-        font-weight: $font-weight-title-name;
-        font-size: $font-size-portfolio-title;
-        line-height: 2;
+        font-weight: $mobile-font-weight-portfolio-title;
+        font-size: $mobile-font-size-portfolio-title;
+        line-height: $mobile-line-height-portfolio-title;
         letter-spacing: 0.06em;
         margin: 0px;  
     }
 
     .portfolio-title-name {
-        font-size: $font-size-button;
-        line-height: 1.87;
+        font-weight: $mobile-font-weight-portfolio-name;
+        font-size: $mobile-font-size-portfolio-name;
+        line-height: $mobile-line-height-portfolio-name;
         letter-spacing: 0.03em;
         margin: 0px;
         color: $primary-text-color;  
@@ -73,8 +74,9 @@
         min-width: 370px;
         min-height: 168px;
         color: $secondary-text-color;
-        font-size: $font-size-portfolio-title;
-        line-height: 1.55;
+        font-size: $mobile-font-size-portfolio-p;
+        line-height: $mobile-line-height-portfolio-p;
+        font-weight: $mobile-font-weight-portfolio-p;
         letter-spacing: 0.03em;
         padding: 63px 24px;
         margin: 0px;
@@ -132,9 +134,9 @@
 .filter-button {
     background-color: $background-color-filter-button;
     color: $title-text-color;
-    font-weight: $font-weight-address-nav;
-    font-size: $font-size-button;
-    line-height: 1.62;
+    font-weight: $mobile-font-weight-filter-button;
+    font-size: $mobile-font-size-filter-button;
+    line-height: $mobile-line-height-filter-button;
     letter-spacing: 0.03em;
     border-radius: 4px;
     padding: 6px 22px;

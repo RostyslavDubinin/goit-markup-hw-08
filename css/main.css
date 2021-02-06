@@ -269,6 +269,10 @@ summary {
   display: list-item;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   padding: 0px;
   margin: 0px;
@@ -311,8 +315,8 @@ img {
 .section-title {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 0px;
@@ -601,9 +605,9 @@ body {
 
 .section-features .features-title-name {
   color: #212121;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 0px;
@@ -631,6 +635,7 @@ body {
 
 .section-features-container .item:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .bg {
@@ -868,47 +873,44 @@ body {
 }
 
 /* footer */
+.logo-black {
+  display: block;
+  color: #FFFFFF;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
 .footer {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer .footer-address-nav {
-  color: #757575;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .adress-footer-column {
   text-align: center;
-}
-
-.logo-black {
-  display: block;
-  margin-bottom: 20px;
-  color: #FFFFFF;
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .footer-address {
   color: #FFFFFF;
   font-style: inherit;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   margin-bottom: 8px;
 }
 
 .adress-nav-footer .link {
   color: #757575;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1004,6 +1006,7 @@ body {
 }
 
 .email-footer-input {
+  padding-left: 16px;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 450px;
@@ -1052,9 +1055,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 93px 15px;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  z-index: 3;
 }
 
 .backdrop.is-hidden {
@@ -1063,13 +1069,10 @@ body {
 }
 
 .modal {
-  max-width: 528px;
-  max-height: 581px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  max-width: 450px;
+  max-height: 609px;
+  padding: 40px;
+  position: relative;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1078,8 +1081,8 @@ body {
 
 .button-close {
   position: absolute;
-  right: 8px;
-  top: 8px;
+  right: 9px;
+  top: 9px;
   width: 30px;
   height: 30px;
   background: #FFFFFF;
@@ -1104,14 +1107,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 40px;
 }
 
 .form p {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -1127,7 +1129,6 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1136,7 +1137,7 @@ body {
   color: #FFFFFF;
 }
 
-.form-fild {
+.form-field {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1145,23 +1146,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   color: #757575;
 }
 
-.form-fild label {
+.form-field label {
   margin-bottom: 4px;
 }
 
-.form-fild input {
+.form-field input {
   display: block;
   margin-bottom: 10px;
   padding-left: 45px;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
@@ -1169,24 +1169,23 @@ body {
   border-radius: 4px;
 }
 
-.form-fild:hover .icon,
-.form-fild input:focus + .icon {
+.form-field:hover .icon,
+.form-field input:focus + .icon {
   fill: #2196F3;
 }
 
-.form-fild textarea {
+.form-field textarea {
   margin-bottom: 20px;
   padding: 12px 16px;
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -1194,7 +1193,7 @@ body {
 .icon {
   position: absolute;
   display: inline-block;
-  top: 27px;
+  top: 30px;
   left: 15px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1211,10 +1210,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1277,6 +1275,7 @@ body {
 }
 
 .section-portfolio .portfolio-title-name {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -1327,6 +1326,7 @@ body {
   color: #FFFFFF;
   font-size: 18px;
   line-height: 1.55;
+  font-weight: 400;
   letter-spacing: 0.03em;
   padding: 63px 24px;
   margin: 0px;

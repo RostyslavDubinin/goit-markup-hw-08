@@ -1,3 +1,8 @@
+body.modal-open {
+    overflow: hidden;
+}
+
+
 .list {
     padding: 0px;
     margin: 0px;
@@ -40,9 +45,9 @@ img {
 
 .section-title {
     color: $title-text-color;
-    font-weight: $font-weight-title-name;
-    font-size: $font-size-section-title;
-    line-height: 1.16;
+    font-weight: $mobile-font-weight-section-title;
+    font-size: $mobile-font-size-section-title;
+    line-height: $mobile-line-height-section-title;
     letter-spacing: 0.03em;
     text-align: center;
     margin-top: 0px;
