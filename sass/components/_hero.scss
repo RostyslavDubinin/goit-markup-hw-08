@@ -7,16 +7,26 @@
     margin-right: auto;
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+    height: 400px;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/mobile-hero.jpg');
+    background-size: 480px 400px;
 
     .hero-title {
         color: $secondary-text-color;
+        font-weight: $mobile-font-weight-hero-title;
+        font-size: $mobile-font-size-hero-title;
+        line-height: $mobile-line-height-hero-title; 
         letter-spacing: 0.06em;
         text-align: center;
         text-transform: uppercase;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
-        margin-bottom: 30px;    
+        margin-bottom: 30px;  
+        width: 360px;  
     }
 
     .hero-button {
@@ -33,73 +43,34 @@
     }
 }
 
-
-
-
-
-
-
-
 @media screen and (max-width: 767px) {
-
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
+
     .hero {
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/mobile-hero@2x.jpg');
     }
     }
-    .hero {
-        
-        padding-top: 118px;
-        padding-bottom: 118px;
-        width: 480px;
-        height: 400px;
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/mobile-hero.jpg');
-        background-size: 480px 400px;
+}
 
-        .hero-title {
-            font-weight: $mobile-font-weight-hero-title;
-            font-size: $mobile-font-size-hero-title;
-            line-height: $mobile-line-height-hero-title;   
-            width: 360px;
-        }
-        .hero-button {
-            background-color: $background-color-hero-button;
-            color: $secondary-text-color; 
-            font-weight: $mobile-font-weight-hero-button;
-            font-size: $mobile-font-size-hero-button;
-            line-height: $mobile-line-height-hero-button;
-            letter-spacing: 0.06em;
-            border-radius: 4px;
-            padding: 10px 32px;
-            min-width: 200px;
-            cursor: pointer;
-        }
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .hero {
+        width: 480px;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
+
     .hero {
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/tablet-hero@2x.jpg');
     }
     }
+
     .hero {
-        
         padding-top: 118px;
         padding-bottom: 118px;
         width: 768px;
@@ -107,32 +78,25 @@
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/tablet-hero.jpg');
         background-size: 768px 400px;
 
+        .hero-title {
+            font-weight: $mobile-font-weight-hero-title;
+            font-size: $mobile-font-size-hero-title;
+            line-height: $mobile-line-height-hero-title;   
+            width: 360px;
+        }
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 1200px) {
-
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
+
     .hero {
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/desktop-hero@2x.jpg');
     }
     }
+
     .hero {
         padding-top: 200px;
         padding-bottom: 200px;
@@ -142,9 +106,9 @@
         background-size: 1600px 600px;
 
         .hero-title {
-            font-weight: $font-weight-hero-title;
-            font-size: $font-size-hero-title;
-            line-height: 1.36;   
+            font-weight: $desktop-font-weight-hero-title;
+            font-size: $desktop-font-size-hero-title;
+            line-height: $desktop-line-height-hero-title;   
             width: 696px;
         }
     }

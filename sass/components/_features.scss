@@ -18,8 +18,8 @@
 
     .features-name { 
         text-align: left;
-        font-size: $mobile-font-size-features-title;
-        line-height: $mobile-line-height-features-title;
+        font-size: $mobile-font-size-features-name;
+        line-height: $mobile-line-height-features-name;
         letter-spacing: 0.03em;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -27,19 +27,10 @@
 }
 
 .section-features-container {
-    // display: flex;
-    // flex-wrap: wrap;
-    padding-left: 15px;
-    padding-right: 15px;
-
+        
     .item {
         width: 100%;
         text-align: center;
-    }
-
-    .item:not(:last-child) {
-        margin-right: 30px;
-        margin-bottom: 30px;
     }
 }
 
@@ -68,4 +59,61 @@
     width: 70px;
     height: 70px;
     fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+
+    .section-features-container {
+        
+        .item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   
+    .section-features {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .features-title-name {
+            text-align: left;
+        }
+    }
+
+    .section-features-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+
+        .item {
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
+    }   
+}
+
+@media screen and (min-width: 1200px) {
+
+    .section-features {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        .features-title-name {
+            text-align: left;
+        }
+    }
+
+    .section-features-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+
+        .item {
+            width: calc((100% - 8 * 15px) / 4);
+            margin: 15px;
+        }
+    }
 }

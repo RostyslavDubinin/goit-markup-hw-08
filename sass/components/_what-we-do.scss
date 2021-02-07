@@ -1,7 +1,13 @@
 /* What we do */
 
+@media screen and (max-width: 1199px) {
+   
+    .section-service {
+        display: none;
+    }
+}
+
 .section-service {
-    display: none;
     background-color: $background-color-section;
     padding-top: 0px;
     padding-bottom: 94px;

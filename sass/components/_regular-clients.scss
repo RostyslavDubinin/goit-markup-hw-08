@@ -3,40 +3,31 @@
 .section-regular-clients {
     background-color: $background-color-section;
     padding-top: 60px;
-    padding-bottom: 45px;
-    
+    padding-bottom: 60px;
 
-    .container .section-title {
-        margin-bottom: 15px;
-    }
 }
 
 .clients-link-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: -15px;
 
     .item {
+        width: calc((100% - 2 * 30px) / 2);
         margin: 15px;
-        
-    }
-
-    .item:not(:last-child) {
-        margin-right: 15px;
-        margin-left: 15px;
     }
 }
 
 .link-clients {
     color: $link-social-color;
     text-align: center;
-    width: 210px;
     height: 90px;
     border: 1px solid $link-social-color;
     box-sizing: border-box;
     display: block;
     border-radius: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0;
 
     &:hover,
     &:focus {
@@ -68,4 +59,31 @@
 }
 .comp6 {
     padding: 22px 40px 22px 41px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .clients-link-container {
+
+        .item {
+            width: calc((100% - 6 * 15px) / 3 );
+            margin: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .section-regular-clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .clients-link-container {
+
+        .item {
+            width: calc((100% - 12 * 15px) / 6 );
+            margin: 15px;
+        }
+    }
 }
