@@ -135,3 +135,40 @@
     color: $accent-text-color;
     margin-left: 5px;
 }
+
+
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+    .form {
+        
+        line-height: $desktop-line-height-form-p;
+    }
+    .form-field {
+        input {
+            width: 448px;
+            height: 40px;
+        }
+        textarea {
+            width: 448px;
+            line-height: $mobile-line-height-form-textarea;
+        }
+    }
+
+    
+    .icon {
+        top: 27px;
+    }
+    .checkbox-agreement {
+        font-size: $desktop-font-size-checkbox-agreement;
+        line-height: $mobile-line-height-checkbox-agreement;
+    }
+}
