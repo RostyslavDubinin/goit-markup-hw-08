@@ -10,7 +10,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     
-    height: 400px;
+    
     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/mobile-hero.jpg');
     background-size: 480px 400px;
 
@@ -56,7 +56,7 @@
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
     .hero {
-        width: 480px;
+        
     }
 }
 
@@ -73,8 +73,6 @@
     .hero {
         padding-top: 118px;
         padding-bottom: 118px;
-        width: 768px;
-        height: 400px;
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/tablet-hero.jpg');
         background-size: 768px 400px;
 
@@ -100,8 +98,6 @@
     .hero {
         padding-top: 200px;
         padding-bottom: 200px;
-        max-width: 1600px;
-        height: 600px;
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/desktop-hero.jpg');
         background-size: 1600px 600px;
 
