@@ -9,10 +9,8 @@
     background-position: center;
     padding-top: 118px;
     padding-bottom: 118px;
-    
-    
     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/mobile-hero.jpg');
-    background-size: 480px 400px;
+    background-size: cover;
 
     .hero-title {
         color: $secondary-text-color;
@@ -74,7 +72,7 @@
         padding-top: 118px;
         padding-bottom: 118px;
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/tablet-hero.jpg');
-        background-size: 768px 400px;
+        // background-size: 768px 400px;
 
         .hero-title {
             font-weight: $mobile-font-weight-hero-title;
@@ -99,7 +97,7 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/desktop-hero.jpg');
-        background-size: 1600px 600px;
+        // background-size: 1600px 600px;
 
         .hero-title {
             font-weight: $desktop-font-weight-hero-title;
